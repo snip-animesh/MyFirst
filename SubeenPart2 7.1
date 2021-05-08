@@ -1,0 +1,11 @@
+with open("FILE.txt",'r') as f:
+	text=f.read()
+import re
+result1=re.findall(r'<li>(.*?)</li>',text)
+result=re.findall(r'<li>\n(.*?)\n<ol>',text,re.M)
+p=0
+
+for i in result:
+	print(i,"-",result1[p],end=", ")
+	print(result1[p+1])
+	p+=2
