@@ -1,0 +1,4 @@
+range=input()
+length=len(range)
+result=9*(length-1)+(int(range))//int('1'*length)
+print(result)
