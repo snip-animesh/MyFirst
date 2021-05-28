@@ -1,0 +1,2 @@
+n,lst=input(),sorted(map(int,input().split()))
+print(min(abs(a-b) for a,b in zip(lst,lst[1:])))
